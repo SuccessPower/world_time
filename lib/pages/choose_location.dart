@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class ChooseLocation extends StatefulWidget {
   const ChooseLocation({super.key});
 
+
+
   @override
   State<ChooseLocation> createState() => _ChooseLocationState();
 }
@@ -10,8 +12,15 @@ class ChooseLocation extends StatefulWidget {
 class _ChooseLocationState extends State<ChooseLocation> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Text("choose location screen"),
+    return Scaffold(
+      backgroundColor: Colors.grey[200],
+      appBar: AppBar(
+        backgroundColor: Colors.teal[900],
+        title: Text('Choose a location'),
+        centerTitle: true,
+        elevation: 0,
+      ),
+      body: Text('choose a location screen'),
     );
   }
 }
